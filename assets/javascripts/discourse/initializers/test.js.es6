@@ -1,6 +1,6 @@
 export default {
     name: 'test',
     initialize() {
-        alert('test!');
+        console.log('plugin javascript test');
     }
 };
