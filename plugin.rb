@@ -14,7 +14,7 @@ $(document).ready(function() {
         cat.color = cattd.css("border-left-color");
         cat.href = cattd.find('h3 a').attr('href');
         cat.name = cattd.find('h3 span.category-name').text();
-        cat.image = cattd.find('img.category-logo');
+        cat.image = cattd.find('img.category-logo').attr('src');
         cat.description = cattd.find('div.category-description').text();
         categories.push(cat);
     });
