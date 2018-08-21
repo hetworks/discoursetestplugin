@@ -29,3 +29,26 @@ $(document).ready(function() {
 
 });
 JS
+
+register_css <<CSS
+
+div[class^="cattegel-"] {
+    display: inline-block;
+    width: 20%;
+    margin: 10px 5% 10px 0;
+    text-align: center;
+}
+
+div[class^="cattegel-"] a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 40px 10px;
+    border: 1px solid grey;
+    border-left-width: 20px;
+}
+
+div[class^="cattegel-"] h3 {
+    color: black;
+}
+CSS
