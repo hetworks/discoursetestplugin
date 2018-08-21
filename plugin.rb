@@ -50,5 +50,7 @@ div[class^="cattegel-"] a {
 
 div[class^="cattegel-"] h3 {
     color: black;
+    font-size: 1.3195em;
+
 }
 CSS
