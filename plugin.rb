@@ -22,7 +22,7 @@ $(document).ready(function() {
     $.each(categories, function(i,v) {
         $("body.navigation-categories .controls").append("<div class='cattegel-"+v.id+"'><a href='"+v.href+"'></a></div>");
         cattegel = $("div.cattegel-"+v.id+" a");
-        cattegel.css("border-left-color", cat.color);
+        cattegel.css("border-left-color", v.color);
         cattegel.append("<h3>"+v.name+"</h3>");
         cattegel.append("<img src='"+v.image+"' />");
     });
