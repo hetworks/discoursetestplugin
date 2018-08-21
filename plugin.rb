@@ -5,7 +5,10 @@
 
 register_javascript <<JS
 $(document).ready(function() {
-    console.log('js test in plugin.rb');
+
+    $(".banner-box").hide();
+    $("html.anon .banner-box").show();
+
     var categories = [];
     $("table.category-list tbody tr").each(function() {
         var cat = {};
@@ -18,7 +21,7 @@ $(document).ready(function() {
         cat.description = cattd.find('div.category-description').text();
         categories.push(cat);
     });
-    console.log(categories);
+
     $.each(categories, function(i,v) {
         $("body.navigation-categories .controls").append("<div class='cattegel-"+v.id+"'><a href='"+v.href+"'></a></div>");
         cattegel = $("div.cattegel-"+v.id+" a");
