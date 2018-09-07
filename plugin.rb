@@ -3,6 +3,7 @@
 # version: 0.0.3
 # authors: Anne
 
+=begin
 register_javascript <<JS
 $(document).ready(function() {
 
@@ -57,3 +58,4 @@ div[class^="cattegel-"] h3 {
 
 }
 CSS
+=end
