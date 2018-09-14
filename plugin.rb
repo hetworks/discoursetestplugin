@@ -1,6 +1,6 @@
 # name: discoursetestplugin
 # about: Discourse test plugin
-# version: 0.0.4
+# version: 0.0.5
 # authors: Anne
 
 register_javascript <<JS
