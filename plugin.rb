@@ -11,7 +11,7 @@ $(document).ready(function() {
      });
     $(".banner-box").hide();
     $("html.anon .banner-box").show();
-
+/*
     var categories = [];
     $("table.category-list tbody tr").each(function() {
         var cat = {};
@@ -32,7 +32,7 @@ $(document).ready(function() {
         cattegel.append("<h3>"+v.name+"</h3>");
         cattegel.append("<img src='"+v.image+"' />");
     });
-
+*/
 });
 JS
 
