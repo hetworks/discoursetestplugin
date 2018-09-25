@@ -4,6 +4,12 @@
 # authors: Anne
 
 register_javascript <<JS
+
+
+$(document).ready(function() {
+    $(".banner-box").hide();
+    $("html.anon .banner-box").show();
+    
 fullscreenbtn = document.getElementById("fullscreenbtn");
 fullscreenbtn.addEventListener("click",toggleFullScreen,false);
 function toggleFullScreen(){
@@ -15,10 +21,7 @@ function toggleFullScreen(){
 	  vid.mozRequestFullScreen();
      }
 }
-
-$(document).ready(function() {
-    $(".banner-box").hide();
-    $("html.anon .banner-box").show();
+    
 /*
     var categories = [];
     $("table.category-list tbody tr").each(function() {
