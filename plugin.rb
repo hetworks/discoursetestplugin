@@ -9,18 +9,20 @@ register_javascript <<JS
 $(document).ready(function() {
     $(".banner-box").hide();
     $("html.anon .banner-box").show();
-    
-fullscreenbtn = document.getElementById("fullscreenbtn");
-fullscreenbtn.addEventListener("click",toggleFullScreen,false);
-function toggleFullScreen(){
-     if (vid.requestFullScreen){
-	  vid.requestFullScreen();
-     } else if (vid.webkitRequestFullScreen){
-	  vid.webkitRequestFullScreen();
-     } else if (vid.mozRequestFullScreen){
-	  vid.mozRequestFullScreen();
+    //fullscreen video
+     var vid, playbtn, seekslider, curtimetext, durtimetext, mutebtn, volumeslider, fullscreenbtn;
+     vid = document.getElementById("forum_video");
+     fullscreenbtn = document.getElementById("fullscreenbtn");
+     fullscreenbtn.addEventListener("click",toggleFullScreen,false);
+     function toggleFullScreen(){
+	  if (vid.requestFullScreen){
+	       vid.requestFullScreen();
+	  } else if (vid.webkitRequestFullScreen){
+	       vid.webkitRequestFullScreen();
+	  } else if (vid.mozRequestFullScreen){
+	       vid.mozRequestFullScreen();
+	  }
      }
-}
     
 /*
     var categories = [];
