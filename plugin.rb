@@ -17,13 +17,13 @@ $(document).ready(function() {
      function toggleFullScreen(){
 	  if (vid.requestFullScreen){
 	       vid.requestFullScreen();
-	       toggleClass('fullscreen');
+	       vid.classList.toggle("fullscreen");
 	  } else if (vid.webkitRequestFullScreen){
 	       vid.webkitRequestFullScreen();
-	       toggleClass('fullscreen');
+	       vid.classList.toggle("fullscreen");
 	  } else if (vid.mozRequestFullScreen){
 	       vid.mozRequestFullScreen();
-	       toggleClass('fullscreen');
+	       vid.classList.toggle("fullscreen");
 	  }
      }
     
