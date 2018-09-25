@@ -35,7 +35,7 @@ $(document).ready(function() {
 */
 });
 JS
-
+//test
 register_css <<CSS
 
 div[class^="cattegel-"] {
