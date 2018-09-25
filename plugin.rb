@@ -5,7 +5,10 @@
 
 register_javascript <<JS
 $(document).ready(function() {
-
+     $('.show_video').on('click', function(event) {
+	  event.preventDefault();
+	  $('video').requestFullscreen();
+     });
     $(".banner-box").hide();
     $("html.anon .banner-box").show();
 
