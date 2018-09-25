@@ -4,11 +4,19 @@
 # authors: Anne
 
 register_javascript <<JS
+fullscreenbtn = document.getElementById("fullscreenbtn");
+fullscreenbtn.addEventListener("click",toggleFullScreen,false);
+function toggleFullScreen(){
+     if (vid.requestFullScreen){
+	  vid.requestFullScreen();
+     } else if (vid.webkitRequestFullScreen){
+	  vid.webkitRequestFullScreen();
+     } else if (vid.mozRequestFullScreen){
+	  vid.mozRequestFullScreen();
+     }
+}
+
 $(document).ready(function() {
-     $('.show_video').on('click', function(event) {
-	  event.preventDefault();
-	  $('video').requestFullscreen();
-     });
     $(".banner-box").hide();
     $("html.anon .banner-box").show();
 /*
@@ -35,7 +43,6 @@ $(document).ready(function() {
 */
 });
 JS
-//test
 register_css <<CSS
 
 div[class^="cattegel-"] {
